@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#section_1 {
+  overflow-x: hidden;
+}
+#left_block {
+  background-image: url("../pictures/nick_left_2.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  background: #d9d9d9;
+  width: 50%;
+  float: left;
+  transition-duration: 1s;
+  overflow-y: hidden;
+  display: inline;
+}
+#right_block {
+  background-image: url("../pictures/BFA_horde_background.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  background: #f9f9f9;
+  width: 50%;
+  float: right;
+  transition-duration: 1s;
+  overflow-y: hidden;
+  display: inline;
+}
+
+#left-tab {
+  position: fixed;
+  left:0;
+  top: 0;
+  width: 20px;
+  height: 100vh;
+  background: #282828;
+  color: white;
+  vertical-align: middle;
+  visibility: collapse;
+  z-index: 200;
+  text-decoration: none;
+  box-shadow: 2px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: width .5s;
+  transition-timing-function: ease;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#right-tab {
+  position: fixed;
+  right:0;
+  top: 0;
+  width: 20px;
+  height: 100vh;
+  background: #282828;
+  color: white;
+  vertical-align: middle;
+  visibility: collapse;
+  z-index: 200;
+  text-decoration: none;
+  box-shadow: 2px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: width .5s;
+  transition-timing-function: ease;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#left-tab:hover {
+  width: 80px;
+  transition: .5s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+#right-tab:hover {
+  width: 80px;
+  transition: .5s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+#left-tab div {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+#right-tab div {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.button_container {
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -150px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+}
+#view_button {
+  grid-column: 1/2;
+  padding: 10px 5px 10px 0;
+  background: white;
+  text-align: right;
+  background: #161616;
+  color: white;
+  border-radius: 4px 0 0 4px;
+}
+#work_button {
+  grid-column: 2/3;
+  padding: 10px 0 10px 5px;
+  background: white;
+  text-align: left;
+  background: #161616;
+  color: white;
+  border-radius: 0 4px 4px 0;
+}
+#artwork_auto_scroll {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding: 10px 5px 10px 0;
+  display: none;
+  text-align: center;
+  background: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+#case_studies_auto_scroll {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding: 10px 5px 10px 0;
+  display: none;
+  text-align: center;
+  background: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+#view_button:hover {
+  background: #dddddd;
+  color: #222222;
+}
+#work_button:hover {
+  background: #dddddd;
+  color: #222222;
+}
+#artwork_auto_scroll:hover {
+  background: #333;
+  color: white;
+}
+#case_studies_auto_scroll:hover {
+  background: #333;
+  color: white;
+}
+
+#section_2 {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+.art {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* center or flex-start */
+  background: #e2e1e0;
+  padding: 1em 3em;
+}
+.card {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 4px;
+  width: calc(100% * (1/5) - 52px - 0px);
+  margin: 10px;
+  padding: 1em;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.img_container {
+  background: black;
+}
+.card img {
+  background: black;
+  opacity: 1;
+}
+.card img:hover {
+  opacity: .5;
+}
+
+#section_3 {
+  display: none;
+}
+.case_studies {
+  height: 50vh;
+}
+li {
+  list-style: none;
+  background: #d1703c;
+  color: #fff;
+  height: 0;
+  line-height: 2em;
+  margin: 0;
+  padding: 0 0.5em;
+  overflow: hidden;
+  width: 10em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+li:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+li.show {
+  height: 2em;
+  margin: 3px 0;
+}
+.fade li {
+  transition: all 0.4s ease-out;
+  opacity: 0;
+  height: 2em;
+}
+.fade li.show {
+  opacity: 1;
+}

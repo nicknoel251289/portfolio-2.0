@@ -21,28 +21,30 @@ $(document).ready(function(){
   });
 
   document.getElementById('left-tab').addEventListener('click', function(){
+    document.getElementById('left-tab').style.visibility = "hidden";
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
     document.getElementById('right-tab').style.zIndex = "0";
     document.getElementById('left-tab').style.zIndex = "300";
-    document.getElementById('left-tab').style.visibility = "hidden";
     document.getElementById('right-tab').style.visibility = "visible";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('work_button').style.display = "none";
+    document.getElementById('case_studies_auto_scroll').style.display = "none";
     document.getElementById('artwork_auto_scroll').style.display = "block";
     document.getElementById('section_2').style.display = "block";
     document.getElementById('section_3').style.display = "none";
   });
 
   document.getElementById('right-tab').addEventListener('click', function(){
+    document.getElementById('right-tab').style.visibility = "hidden";
     document.getElementById('right_block').style.width = "100%";
     document.getElementById('left_block').style.width = "0%";
     document.getElementById('left-tab').style.zIndex = "0";
     document.getElementById('right-tab').style.zIndex = "300";
-    document.getElementById('right-tab').style.visibility = "hidden";
     document.getElementById('left-tab').style.visibility = "visible";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('view_button').style.display = "none";
+    document.getElementById('artwork_auto_scroll').style.display = "none";
     document.getElementById('case_studies_auto_scroll').style.display = "block";
     document.getElementById('section_2').style.display = "none";
     document.getElementById('section_3').style.display = "block";

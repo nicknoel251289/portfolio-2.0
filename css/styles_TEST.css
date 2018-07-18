@@ -23,7 +23,7 @@ img {
   background: #d9d9d9;
   width: 50%;
   float: left;
-  transition-duration: 1s;
+  transition-duration: .5s;
   overflow-y: hidden;
   display: inline;
 }
@@ -34,7 +34,7 @@ img {
   background: #f9f9f9;
   width: 50%;
   float: right;
-  transition-duration: 1s;
+  transition-duration: .5s;
   overflow-y: hidden;
   display: inline;
 }

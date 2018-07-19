@@ -42,60 +42,68 @@ img {
 #left-tab {
   position: fixed;
   left:0;
-  top: 0;
+  top: 50%;
   width: 20px;
-  height: 100vh;
+  height: 20vh;
   background: #282828;
   color: white;
   vertical-align: middle;
-  visibility: collapse;
+  display: none;
   z-index: 200;
   text-decoration: none;
   box-shadow: 2px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: width .5s;
+  transition: .7s;
   transition-timing-function: ease;
   align-items: center;
-  display: flex;
   justify-content: center;
+  border-radius: 0 4px 4px 0;
 }
 #right-tab {
   position: fixed;
   right:0;
-  top: 0;
+  top: 50%;
   width: 20px;
-  height: 100vh;
+  height: 20vh;
   background: #282828;
   color: white;
   vertical-align: middle;
-  visibility: collapse;
+  display: none;
   z-index: 200;
   text-decoration: none;
   box-shadow: 2px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: width .5s;
+  transition: .7s;
   transition-timing-function: ease;
   align-items: center;
-  display: flex;
   justify-content: center;
+  border-radius: 4px 0 0 4px;
 }
 #left-tab:hover {
   width: 80px;
-  transition: .5s;
+  height: 100vh;
+  top: 0;
+  transition: .7s;
   transition-timing-function: ease;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 0;
 }
 #right-tab:hover {
   width: 80px;
-  transition: .5s;
+  height: 100vh;
+  top: 0;
+  transition: .7s;
   transition-timing-function: ease;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 0;
 }
-#left-tab div {
+#left-tab-div {
   writing-mode: vertical-lr;
   text-orientation: upright;
+  visibility: hidden;
 }
-#right-tab div {
+#right-tab-div {
   writing-mode: vertical-lr;
   text-orientation: upright;
+  visibility: hidden;
 }
 
 .button_container {

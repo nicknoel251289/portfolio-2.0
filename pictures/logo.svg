@@ -6,17 +6,17 @@
 				.st0{fill:none;stroke:#333338;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:1;}
 
 				.st0 {
-					stroke-dasharray: 800;
+					stroke-dasharray: 2020;
 					stroke-dashoffset: 0;
-					-webkit-animation: dash 2s linear forwards;
-					-moz-animation: dash 2s linear forwards;
-					-o-animation: dash 2s linear forwards;
-					animation: dash 2s linear forwards;
+					-webkit-animation: dash 3s linear forwards;
+					-moz-animation: dash 3s linear forwards;
+					-o-animation: dash 3s linear forwards;
+					animation: dash 3s linear forwards;
 				}
 
 				@-webkit-keyframes dash {
 					from {
-						stroke-dashoffset: 800;
+						stroke-dashoffset: 2020;
 					}
 					to {
 						stroke-dashoffset: 0;

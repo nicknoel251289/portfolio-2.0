@@ -16,6 +16,16 @@ img {
 #section_1 {
   overflow-x: hidden;
 }
+
+.logo_container {
+  width: 600px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -300px;
+}
+
 #left_block {
   background-image: url("../pictures/nick_left_2.jpg");
   background-size: cover;

@@ -16,37 +16,47 @@ img {
 #section_1 {
   overflow-x: hidden;
 }
-
-#nnlogo {
+.logo_container {
   display: flex;
   position: absolute;
-  top: 35%;
-  left: 50%;
-  margin-left: -300px;
-  width: 600px;
+}
+#nnlogo {
+  max-width: 600px;
+  z-index: 600;
 }
 
 #left_block {
-  background-image: url("../pictures/nick_left_2.jpg");
+  /*background-image: url("../pictures/keyboard_cutout.jpg");*/
   background-size: cover;
   min-height: 100vh;
-  background: #d9d9d9;
   width: 50%;
   float: left;
   transition-duration: .5s;
-  overflow-y: hidden;
+  overflow: hidden;
   display: inline;
+  position: relative;
 }
 #right_block {
-  background-image: url("../pictures/BFA_horde_background.jpg");
   background-size: cover;
   min-height: 100vh;
-  background: #f9f9f9;
   width: 50%;
   float: right;
   transition-duration: .5s;
-  overflow-y: hidden;
+  overflow: hidden;
   display: inline;
+  position: relative;
+}
+.keyboard_cutout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+.drawing-cartoon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
 }
 
 #left-tab {

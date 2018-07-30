@@ -33,8 +33,9 @@ img {
   float: left;
   transition-duration: .5s;
   overflow: hidden;
-  display: inline;
+  display: flex;
   position: relative;
+  align-items: flex-start;
 }
 #right_block {
   background-size: cover;
@@ -43,20 +44,24 @@ img {
   float: right;
   transition-duration: .5s;
   overflow: hidden;
-  display: inline;
+  display: flex;
   position: relative;
+  align-items: flex-end;
 }
+
 .keyboard_cutout {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
+  width: auto;
+  height: 100vh;
 }
 .drawing-cartoon {
   position: absolute;
   right: 0;
   top: 0;
-  width: 100vw;
+  width: auto;
+  height: 100vh;
 }
 
 #left-tab {
@@ -276,6 +281,19 @@ li.show {
   .card {
     padding: 1em;
     width: calc(100% * (1/2) - 52px - 0px);
+  }
+
+  .keyboard_cutout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+  }
+  .drawing-cartoon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
   }
 
 }

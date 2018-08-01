@@ -34,7 +34,7 @@ img {
   float: left;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100%;
+  grid-template-rows: 100vh;
 }
 #right_block {
   min-height: 100vh;
@@ -44,19 +44,19 @@ img {
   float: right;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100%;
+  grid-template-rows: 100vh;
 }
 
 #keyboard_cutout {
   grid-column: 1/2;
   grid-row: 1/2;
-  align-self: center;
+  align-self: end;
   width: 200%;
 }
 #drawing_cartoon {
   grid-column: 1/2;
   grid-row: 1/2;
-  align-self: center;
+  align-self: end;
   width: 200%;
   position: relative;
   right: 100%;

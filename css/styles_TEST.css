@@ -8,13 +8,13 @@ body {
 }
 
 img {
-  display: block;
   width: 100%;
-  height: auto;
+  display: block;
 }
 
 #section_1 {
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 .logo_container {
   display: flex;
@@ -26,42 +26,40 @@ img {
 }
 
 #left_block {
-  /*background-image: url("../pictures/keyboard_cutout.jpg");*/
-  background-size: cover;
   min-height: 100vh;
   width: 50%;
-  float: left;
   transition-duration: .5s;
+  margin-right: none;
   overflow: hidden;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
+  float: left;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
 }
 #right_block {
-  background-size: cover;
   min-height: 100vh;
   width: 50%;
-  float: right;
   transition-duration: .5s;
   overflow: hidden;
-  display: flex;
-  position: relative;
-  align-items: flex-end;
+  float: right;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
 }
 
-.keyboard_cutout {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: auto;
-  height: 100vh;
+#keyboard_cutout {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  width: 200%;
 }
-.drawing-cartoon {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: auto;
-  height: 100vh;
+#drawing_cartoon {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  width: 200%;
+  position: relative;
+  right: 100%;
 }
 
 #left-tab {
@@ -281,19 +279,6 @@ li.show {
   .card {
     padding: 1em;
     width: calc(100% * (1/2) - 52px - 0px);
-  }
-
-  .keyboard_cutout {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100vh;
-  }
-  .drawing-cartoon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100vh;
   }
 
 }

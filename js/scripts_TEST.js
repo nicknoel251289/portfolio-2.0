@@ -3,8 +3,6 @@ $(document).ready(function(){
   document.getElementById('view_button').addEventListener('click', function(){
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
-    document.getElementById('keyboard_cutout').style.width = "100%";
-    document.getElementById('drawing_cartoon').style.right = "0";
     document.getElementById('right-tab').style.visibility = "visible";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('work_button').style.display = "none";
@@ -16,8 +14,6 @@ $(document).ready(function(){
   document.getElementById('work_button').addEventListener('click', function(){
     document.getElementById('right_block').style.width = "100%";
     document.getElementById('left_block').style.width = "0%";
-    document.getElementById('drawing_cartoon').style.width = "100%";
-    document.getElementById('drawing_cartoon').style.right = "0";
     document.getElementById('left-tab').style.visibility = "visible";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('view_button').style.display = "none";
@@ -32,8 +28,6 @@ $(document).ready(function(){
     document.getElementById('right-tab').style.zIndex = "0";
     document.getElementById('left-tab').style.zIndex = "300";
     document.getElementById('left_block').style.width = "100%";
-    document.getElementById('keyboard_cutout').style.width = "100%";
-    document.getElementById('drawing_cartoon').style.right = "0";
     document.getElementById('right_block').style.width = "0%";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('work_button').style.display = "none";
@@ -55,8 +49,6 @@ $(document).ready(function(){
     document.getElementById('left-tab').style.zIndex = "0";
     document.getElementById('right-tab').style.zIndex = "300";
     document.getElementById('right_block').style.width = "100%";
-    document.getElementById('drawing_cartoon').style.width = "100%";
-    document.getElementById('drawing_cartoon').style.right = "0";
     document.getElementById('left_block').style.width = "0%";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('view_button').style.display = "none";

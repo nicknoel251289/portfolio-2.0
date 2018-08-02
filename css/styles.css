@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,49 +10,115 @@ body {
   font-size: 16px;
 }
 
-#section_1 {
-  overflow-x: hidden;
-}
-#left_block {
-  background-image: url("../pictures/nick_left_2.jpg");
-  background-size: cover;
-  min-height: 100vh;
-  background: #d9d9d9;
-  width: 50%;
-  float: left;
-  transition-duration: 1s;
-  overflow-y: hidden;
-  display: inline;
-}
-#right_block {
-  background-image: url("../pictures/BFA_horde_background.jpg");
-  background-size: cover;
-  min-height: 100vh;
-  background: #f9f9f9;
-  width: 50%;
-  float: right;
-  transition-duration: 1s;
-  overflow-y: hidden;
-  display: inline;
+img {
+  width: 100%;
+  margin: 0;
+  display: block;
 }
 
-.back_button {
+#section_1 {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  transition: .5s;
+}
+#left_block {
+  width: 50%;
+  overflow: hidden;
+  display: inline-block;
+  transition: .5s;
+}
+#right_block {
+  width: 50%;
+  overflow: hidden;
+  display: inline-block;
+  transition: .5s;
+}
+#keyboard {
+  height: 100vh;
+  width: auto;
+}
+#art {
+  height: 100vh;
+  width: auto;
+}
+
+.logo_container {
+  display: flex;
   position: absolute;
-  top: 30px;
-  left: 30px;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  background: #333;
+}
+#nnlogo {
+  max-width: 600px;
+  z-index: 600;
+}
+
+#left-tab {
+  position: fixed;
+  left:0;
+  top: 42%;
+  width: 20px;
+  height: 20vh;
+  background: #282828;
   color: white;
-  z-index: 150;
-  text-align: center;
-  line-height: 70px;
+  vertical-align: middle;
+  display: none;
+  z-index: 200;
+  text-decoration: none;
+  box-shadow: 2px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: .7s;
+  transition-timing-function: ease;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 4px 4px 0;
 }
-.back_button:hover {
-  background: #ddd;
-  color: #333;
+#right-tab {
+  position: fixed;
+  right:0;
+  top: 42%;
+  width: 20px;
+  height: 20vh;
+  background: #282828;
+  color: white;
+  vertical-align: middle;
+  display: none;
+  z-index: 200;
+  text-decoration: none;
+  box-shadow: 2px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: .7s;
+  transition-timing-function: ease;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0 0 4px;
 }
+#left-tab:hover {
+  width: 80px;
+  height: 100vh;
+  top: 0;
+  transition: .7s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 0;
+}
+#right-tab:hover {
+  width: 80px;
+  height: 100vh;
+  top: 0;
+  transition: .7s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 0;
+}
+#left-tab-div {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  visibility: hidden;
+}
+#right-tab-div {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  visibility: hidden;
+}
+
 .button_container {
   height: 40px;
   position: absolute;
@@ -118,24 +187,24 @@ body {
 
 #section_2 {
   display: none;
+  padding: 0;
+  margin: 0;
 }
 .art {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-flow: row;
-  grid-gap: 1em;
-  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* center or flex-start */
   background: #e2e1e0;
-  overflow: hidden;
+  padding: 1em;
 }
 .card {
-  overflow: hidden;
-  margin: auto;
   background: white;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   border-radius: 4px;
-  transition-duration: .5s;
+  width: calc(100% * (1/1) - 0px - 0px);
+  margin: 10px;
+  padding: .5em;
+  overflow: hidden;
 }
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -144,22 +213,12 @@ body {
   background: black;
 }
 .card img {
-  width: 100%;
   background: black;
   opacity: 1;
 }
 .card img:hover {
   opacity: .5;
 }
-.card p {
-  background: white;
-  padding: 10px;
-}
-.card_1 {
-  grid-column: 1/2;
-  transition-duration: .5s;
-}
-
 
 #section_3 {
   display: none;
@@ -194,4 +253,29 @@ li.show {
 }
 .fade li.show {
   opacity: 1;
+}
+
+@media (min-width: 415px) {
+
+  .card {
+    width: calc(100% * (1/2) - 36px - 0px);
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .card {
+    padding: 1em;
+    width: calc(100% * (1/2) - 52px - 0px);
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .card {
+    width: calc(100% * (1/3) - 52px - 0px);
+  }
+
 }

@@ -15,7 +15,30 @@ img {
 #section_1 {
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  transition: .5s;
 }
+#left_block {
+  width: 50%;
+  overflow: hidden;
+  display: inline-block;
+  transition: .5s;
+}
+#right_block {
+  width: 50%;
+  overflow: hidden;
+  display: inline-block;
+  transition: .5s;
+}
+#keyboard {
+  height: 100vh;
+  width: auto;
+}
+#art {
+  height: 100vh;
+  width: auto;
+}
+
 .logo_container {
   display: flex;
   position: absolute;
@@ -23,43 +46,6 @@ img {
 #nnlogo {
   max-width: 600px;
   z-index: 600;
-}
-
-#left_block {
-  min-height: 100vh;
-  width: 50%;
-  transition-duration: .5s;
-  margin-right: none;
-  overflow: hidden;
-  float: left;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100vh;
-}
-#right_block {
-  min-height: 100vh;
-  width: 50%;
-  transition-duration: .5s;
-  overflow: hidden;
-  float: right;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100vh;
-}
-
-#keyboard_cutout {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  align-self: end;
-  width: 200%;
-}
-#drawing_cartoon {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  align-self: end;
-  width: 200%;
-  position: relative;
-  right: 100%;
 }
 
 #left-tab {
@@ -218,7 +204,6 @@ img {
 }
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  transform: scale(1.075);
 }
 .img_container {
   background: black;

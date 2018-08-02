@@ -11,8 +11,6 @@ body {
 }
 
 img {
-  width: 100%;
-  margin: 0;
   display: block;
 }
 
@@ -21,26 +19,31 @@ img {
   overflow: hidden;
   display: flex;
   transition: .5s;
+  vertical-align: middle;
 }
 #left_block {
   width: 50%;
   overflow: hidden;
-  display: inline-block;
   transition: .5s;
+  vertical-align: middle;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 #right_block {
   width: 50%;
   overflow: hidden;
-  display: inline-block;
   transition: .5s;
+  vertical-align: middle;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 #keyboard {
-  height: 100vh;
-  width: auto;
+  width: 200%;
 }
-#art {
-  height: 100vh;
-  width: auto;
+#artbg {
+  width: 200%;
 }
 
 .logo_container {

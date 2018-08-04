@@ -3,6 +3,7 @@ $(document).ready(function(){
   document.getElementById('view_button').addEventListener('click', function(){
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
+    document.getElementById('cartoon_computer').style.width = "0px";
     document.getElementById('right-tab').style.visibility = "visible";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('work_button').style.display = "none";
@@ -14,6 +15,7 @@ $(document).ready(function(){
   document.getElementById('work_button').addEventListener('click', function(){
     document.getElementById('right_block').style.width = "100%";
     document.getElementById('left_block').style.width = "0%";
+    document.getElementById('code_computer').style.margin = "0px";
     document.getElementById('left-tab').style.visibility = "visible";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('view_button').style.display = "none";

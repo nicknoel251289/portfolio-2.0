@@ -3,38 +3,53 @@ $(document).ready(function(){
   document.getElementById('view_button').addEventListener('click', function(){
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
+    document.getElementById('cartoon_computer').style.margin = "0 auto";
+    document.getElementById('cartoon_computer').style.width = "50%";
     document.getElementById('right-tab').style.visibility = "visible";
+    document.getElementById('right-tab-div').style.visibility = "visible";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('artwork_auto_scroll').style.display = "block";
     document.getElementById('section_2').style.display = "block";
+    document.getElementById('section_4').style.display = "block";
     document.getElementById('right-tab').style.display = "inline-flex";
   });
 
   document.getElementById('work_button').addEventListener('click', function(){
     document.getElementById('right_block').style.width = "100%";
     document.getElementById('left_block').style.width = "0%";
+    document.getElementById('code_computer').style.margin = "0 auto";
+    document.getElementById('code_computer').style.width = "50%";
+    document.getElementById('left-tab').style.zIndex = "300";
     document.getElementById('left-tab').style.visibility = "visible";
+    document.getElementById('left-tab-div').style.visibility = "visible";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('case_studies_auto_scroll').style.display = "block";
     document.getElementById('section_3').style.display = "block";
+    document.getElementById('section_5').style.display = "block";
     document.getElementById('left-tab').style.display = "inline-flex";
   });
 
   document.getElementById('left-tab').addEventListener('click', function(){
     document.getElementById('left-tab').style.display = "none";
+    document.getElementById('right-tab').style.visibility = "visible";
+    document.getElementById('right-tab-div').style.visibility = "visible";
     document.getElementById('right-tab').style.display = "inline-flex";
     document.getElementById('right-tab').style.zIndex = "0";
     document.getElementById('left-tab').style.zIndex = "300";
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
+    document.getElementById('cartoon_computer').style.margin = "0 auto";
+    document.getElementById('cartoon_computer').style.width = "50%";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('case_studies_auto_scroll').style.display = "none";
     document.getElementById('artwork_auto_scroll').style.display = "block";
     document.getElementById('section_2').style.display = "block";
+    document.getElementById('section_4').style.display = "block";
     document.getElementById('section_3').style.display = "none";
+    document.getElementById('section_5').style.display = "none";
   });
 
   $("#left-tab").hover(function(){
@@ -45,17 +60,23 @@ $(document).ready(function(){
 
   document.getElementById('right-tab').addEventListener('click', function(){
     document.getElementById('right-tab').style.display = "none";
+    document.getElementById('left-tab').style.visibility = "visible";
+    document.getElementById('left-tab-div').style.visibility = "visible";
     document.getElementById('left-tab').style.display = "inline-flex";
     document.getElementById('left-tab').style.zIndex = "0";
     document.getElementById('right-tab').style.zIndex = "300";
     document.getElementById('right_block').style.width = "100%";
     document.getElementById('left_block').style.width = "0%";
+    document.getElementById('code_computer').style.margin = "0 auto";
+    document.getElementById('code_computer').style.width = "50%";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('artwork_auto_scroll').style.display = "none";
     document.getElementById('case_studies_auto_scroll').style.display = "block";
     document.getElementById('section_2').style.display = "none";
+    document.getElementById('section_4').style.display = "none";
     document.getElementById('section_3').style.display = "block";
+    document.getElementById('section_5').style.display = "block";
   });
 
   $("#right-tab").hover(function(){

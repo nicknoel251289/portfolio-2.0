@@ -37,7 +37,7 @@ $(document).ready(function(){
     document.getElementById('right-tab-div').style.visibility = "visible";
     document.getElementById('right-tab').style.display = "inline-flex";
     document.getElementById('right-tab').style.zIndex = "0";
-    document.getElementById('left-tab').style.zIndex = "1000";
+    document.getElementById('right-tab').style.zIndex = "1000";
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
     document.getElementById('cartoon_computer').style.margin = "0 auto";
@@ -64,7 +64,7 @@ $(document).ready(function(){
     document.getElementById('left-tab-div').style.visibility = "visible";
     document.getElementById('left-tab').style.display = "inline-flex";
     document.getElementById('left-tab').style.zIndex = "0";
-    document.getElementById('right-tab').style.zIndex = "300";
+    document.getElementById('left-tab').style.zIndex = "1000";
     document.getElementById('right_block').style.width = "100%";
     document.getElementById('left_block').style.width = "0%";
     document.getElementById('code_computer').style.margin = "0 auto";

@@ -161,13 +161,38 @@ $(document).ready(function(){
       }, 100);
     }
 
-    $('#charcoal_filter').click(function(e) {
+    /*$('#charcoal_filter').click(function(e) {
       if(document.getElementById("charcoal_filter").checked == true){
         $('.card').not('.charcoal').animate({width: 'hide'}, 600);
       }else if(document.getElementById("charcoal_filter").checked == false){
         $('.card').not('.charcoal').animate({width: 'show'}, 600, 'linear');
       }
+    });*/
+
+    $('#charcoal_filter').click(function(e) {
+      if(document.getElementById("charcoal_filter").checked == true){
+        $('.charcoal').animate({width: 'show'}, 600);
+      } else if(document.getElementById("charcoal_filter").checked == false){
+        $('.charcoal').animate({width: 'hide'}, 600);
+      }
     });
+    $('#pencil_filter').click(function(e) {
+      if(document.getElementById("pencil_filter").checked == true){
+        $('.pencil').animate({width: 'show'}, 600);
+      } else if(document.getElementById("charcoal_filter").checked == false){
+        $('.pencil').animate({width: 'hide'}, 600);
+      }
+    });
+
+    /*$("label").click(function() {
+      if($(this).is("#charcoal_button")) {
+        $('.card').not('.charcoal').toggle({width: 'hide'}, 600);
+        $("#charcoal_button").toggleClass("clicked");
+      } else if($(this).is("#pencil_button")) {
+        $('.card').not('.pencil').toggle({width: 'hide'}, 600);
+        $("#pencil_button").toggleClass("clicked");
+      }
+    });*/
 
     /* $('#charcoal_filter').click(function(e) {
       if(document.getElementById("charcoal_filter").checked == true){

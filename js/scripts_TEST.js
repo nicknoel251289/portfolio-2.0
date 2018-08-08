@@ -181,7 +181,7 @@ $(document).ready(function(){
       }
     });*/
 
-
+ //for filters
     var filter = document.getElementsByClassName('filter_button');
     $("#charcoal_button").click(function(){
         if($("#charcoal_button").hasClass('clicked')){

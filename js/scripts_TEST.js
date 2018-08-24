@@ -46,11 +46,9 @@ $(document).ready(function(){
         document.getElementById('cartoon_computer').style.width = "40%";
         document.getElementById('cartoon_computer').style.top = "-30px";
       }else if($(window).height() >= 414 && $(window).width() >= 736){
-        document.getElementById('cartoon_computer').style.width = "700px";
-        document.getElementById('cartoon_computer').style.top = "100px";
+        document.getElementById('cartoon_computer').style.width = "700px";;
       }else if($(window).height() >= 414 && $(window).width() <= 736){
         document.getElementById('cartoon_computer').style.width = "70%";
-        document.getElementById('cartoon_computer').style.top = "0px";
       }
     });
   };
@@ -103,10 +101,8 @@ $(document).ready(function(){
         document.getElementById('code_computer').style.top = "-30px";
       }else if($(window).height() >= 414 && $(window).width() >= 736){
         document.getElementById('code_computer').style.width = "700px";
-        document.getElementById('code_computer').style.top = "100px";
       }else if($(window).height() >= 414 && $(window).width() <= 736){
         document.getElementById('code_computer').style.width = "70%";
-        document.getElementById('code_computer').style.top = "0px";
       }
     });
   };

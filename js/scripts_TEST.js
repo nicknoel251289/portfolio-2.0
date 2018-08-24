@@ -18,11 +18,12 @@ $(document).ready(function(){
     }else{
       document.getElementById('cartoon_computer').style.width = "700px";
     }
-    if($(window).height() <= 414){
+
+    if($(window).height() <= 414 && $(window).width() <= 736){
       document.getElementById('cartoon_computer').style.width = "40%";
       document.getElementById('cartoon_computer').style.top = "-30px";
     }else{
-      console.log("taller than 414px");
+
     }
 
     resizeFamImageWidth();
@@ -34,7 +35,7 @@ $(document).ready(function(){
     $(window).resize(function(){
       if($(window).width() <= 736){
         document.getElementById('cartoon_computer').style.width = "70%";
-      }else if($(window).width() >= 736){
+      }else if($(window).width() > 736){
         document.getElementById('cartoon_computer').style.width = "700px";
       }
     });
@@ -45,8 +46,8 @@ $(document).ready(function(){
       if($(window).height() <= 414){
         document.getElementById('cartoon_computer').style.width = "40%";
         document.getElementById('cartoon_computer').style.top = "-30px";
-      }else if($(window).height() >= 414 && $(window).width() >= 736){
-        document.getElementById('cartoon_computer').style.width = "700px";;
+      }else if($(window).height() >= 414 && $(window).width() > 736){
+        document.getElementById('cartoon_computer').style.width = "700px";
       }else if($(window).height() >= 414 && $(window).width() <= 736){
         document.getElementById('cartoon_computer').style.width = "70%";
       }
@@ -88,7 +89,7 @@ $(document).ready(function(){
     $(window).resize(function(){
       if($(window).width() <= 736){
         document.getElementById('code_computer').style.width = "70%";
-      }else if($(window).width() >= 736){
+      }else if($(window).width() > 736){
         document.getElementById('code_computer').style.width = "700px";
       }
     });
@@ -99,7 +100,7 @@ $(document).ready(function(){
       if($(window).height() <= 414){
         document.getElementById('code_computer').style.width = "40%";
         document.getElementById('code_computer').style.top = "-30px";
-      }else if($(window).height() >= 414 && $(window).width() >= 736){
+      }else if($(window).height() >= 414 && $(window).width() > 736){
         document.getElementById('code_computer').style.width = "700px";
       }else if($(window).height() >= 414 && $(window).width() <= 736){
         document.getElementById('code_computer').style.width = "70%";

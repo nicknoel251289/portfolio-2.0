@@ -501,15 +501,15 @@ li.show {
     position: relative;
     width: 100%;
     margin-left: 50%;
-    top: 200px;
     grid-row: 1/2;
+    top: 200px;
   }
   #code_computer {
     position: relative;
     width: 100%;
     margin-left: -50%;
-    top: 200px;
     grid-row: 1/2;
+    top: 200px;
   }
 
   .h1_artwork {

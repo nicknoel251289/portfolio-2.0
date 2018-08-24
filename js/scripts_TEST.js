@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
+  var innerScreenWidth = window.innerWidth;
+  console.log(innerScreenWidth);
+
   document.getElementById('view_button').addEventListener('click', function(){
+
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
     document.getElementById('cartoon_computer').style.margin = "0 auto";
-    document.getElementById('cartoon_computer').style.width = "40%";
     document.getElementById('right-tab').style.visibility = "visible";
     document.getElementById('right-tab-div').style.visibility = "visible";
     document.getElementById('view_button').style.display = "none";
@@ -13,13 +16,32 @@ $(document).ready(function(){
     document.getElementById('section_2').style.display = "grid";
     document.getElementById('section_4').style.display = "block";
     document.getElementById('right-tab').style.display = "inline-flex";
+
+    if($(window).width() <= 730){
+      document.getElementById('cartoon_computer').style.width = "70%";
+      console.log("hello");
+    }else{
+      document.getElementById('cartoon_computer').style.width = "500px";
+    }
+
+    resizeFamImageAfterClick();
   });
+
+  var resizeFamImageAfterClick = function(){
+    $(window).resize(function(){
+      if($(window).width() <= 730){
+        console.log("hello");
+        document.getElementById('cartoon_computer').style.width = "70%";
+      }else if($(window).width() >= 730){
+        document.getElementById('cartoon_computer').style.width = "700px";
+      }
+    });
+  };
 
   document.getElementById('work_button').addEventListener('click', function(){
     document.getElementById('right_block').style.width = "100%";
     document.getElementById('left_block').style.width = "0%";
     document.getElementById('code_computer').style.margin = "0 auto";
-    document.getElementById('code_computer').style.width = "40%";
     document.getElementById('left-tab').style.zIndex = "1000";
     document.getElementById('left-tab').style.visibility = "visible";
     document.getElementById('left-tab-div').style.visibility = "visible";
@@ -29,7 +51,27 @@ $(document).ready(function(){
     document.getElementById('section_3').style.display = "block";
     document.getElementById('section_5').style.display = "block";
     document.getElementById('left-tab').style.display = "inline-flex";
+
+    if($(window).width() <= 730){
+      document.getElementById('code_computer').style.width = "70%";
+      console.log("hello");
+    }else{
+      document.getElementById('code_computer').style.width = "700px";
+    }
+
+    resizeFamImageAfterClick();
   });
+
+  var resizeCodeImageAfterClick = function(){
+    $(window).resize(function(){
+      if($(window).width() <= 730){
+        console.log("hello");
+        document.getElementById('cartoon_computer').style.width = "70%";
+      }else if($(window).width() >= 730){
+        document.getElementById('cartoon_computer').style.width = "700px";
+      }
+    });
+  };
 
   document.getElementById('left-tab').addEventListener('click', function(){
     document.getElementById('left-tab').style.display = "none";
@@ -41,7 +83,6 @@ $(document).ready(function(){
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
     document.getElementById('cartoon_computer').style.margin = "0 auto";
-    document.getElementById('cartoon_computer').style.width = "40%";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('case_studies_auto_scroll').style.display = "none";
@@ -50,6 +91,13 @@ $(document).ready(function(){
     document.getElementById('section_4').style.display = "block";
     document.getElementById('section_3').style.display = "none";
     document.getElementById('section_5').style.display = "none";
+
+    if($(window).width() <= 730){
+      document.getElementById('cartoon_computer').style.width = "70%";
+      console.log("hello");
+    }else{
+      document.getElementById('cartoon_computer').style.width = "700px";
+    }
   });
 
   $("#left-tab").hover(function(){
@@ -68,7 +116,6 @@ $(document).ready(function(){
     document.getElementById('right_block').style.width = "100%";
     document.getElementById('left_block').style.width = "0%";
     document.getElementById('code_computer').style.margin = "0 auto";
-    document.getElementById('code_computer').style.width = "40%";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('artwork_auto_scroll').style.display = "none";
@@ -77,6 +124,13 @@ $(document).ready(function(){
     document.getElementById('section_4').style.display = "none";
     document.getElementById('section_3').style.display = "block";
     document.getElementById('section_5').style.display = "block";
+
+    if($(window).width() <= 730){
+      document.getElementById('code_computer').style.width = "70%";
+      console.log("hello");
+    }else{
+      document.getElementById('code_computer').style.width = "700px";
+    }
   });
 
   $("#right-tab").hover(function(){

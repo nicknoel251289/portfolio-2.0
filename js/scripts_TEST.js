@@ -4,7 +4,6 @@ $(document).ready(function(){
   console.log(innerScreenWidth);
 
   document.getElementById('view_button').addEventListener('click', function(){
-
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
     document.getElementById('cartoon_computer').style.margin = "0 auto";
@@ -17,7 +16,7 @@ $(document).ready(function(){
     document.getElementById('section_4').style.display = "block";
     document.getElementById('right-tab').style.display = "inline-flex";
 
-    if($(window).width() <= 730){
+    if($(window).width() <= 736){
       document.getElementById('cartoon_computer').style.width = "70%";
       console.log("hello");
     }else{
@@ -29,10 +28,10 @@ $(document).ready(function(){
 
   var resizeFamImageAfterClick = function(){
     $(window).resize(function(){
-      if($(window).width() <= 730){
+      if($(window).width() <= 736){
         console.log("hello");
         document.getElementById('cartoon_computer').style.width = "70%";
-      }else if($(window).width() >= 730){
+      }else if($(window).width() >= 736){
         document.getElementById('cartoon_computer').style.width = "700px";
       }
     });
@@ -52,23 +51,23 @@ $(document).ready(function(){
     document.getElementById('section_5').style.display = "block";
     document.getElementById('left-tab').style.display = "inline-flex";
 
-    if($(window).width() <= 730){
+    if($(window).width() <= 736){
       document.getElementById('code_computer').style.width = "70%";
       console.log("hello");
     }else{
-      document.getElementById('code_computer').style.width = "700px";
+      document.getElementById('code_computer').style.width = "500px";
     }
 
-    resizeFamImageAfterClick();
+    resizeCodeImageAfterClick();
   });
 
   var resizeCodeImageAfterClick = function(){
     $(window).resize(function(){
-      if($(window).width() <= 730){
+      if($(window).width() <= 736){
         console.log("hello");
-        document.getElementById('cartoon_computer').style.width = "70%";
-      }else if($(window).width() >= 730){
-        document.getElementById('cartoon_computer').style.width = "700px";
+        document.getElementById('code_computer').style.width = "70%";
+      }else if($(window).width() >= 736){
+        document.getElementById('code_computer').style.width = "700px";
       }
     });
   };
@@ -92,18 +91,12 @@ $(document).ready(function(){
     document.getElementById('section_3').style.display = "none";
     document.getElementById('section_5').style.display = "none";
 
-    if($(window).width() <= 730){
+    if($(window).width() <= 736){
       document.getElementById('cartoon_computer').style.width = "70%";
       console.log("hello");
     }else{
       document.getElementById('cartoon_computer').style.width = "700px";
     }
-  });
-
-  $("#left-tab").hover(function(){
-    $("#left-tab-div").css("visibility", "visible");
-    }, function(){
-    $("#left-tab-div").css("visibility", "hidden");
   });
 
   document.getElementById('right-tab').addEventListener('click', function(){
@@ -125,12 +118,18 @@ $(document).ready(function(){
     document.getElementById('section_3').style.display = "block";
     document.getElementById('section_5').style.display = "block";
 
-    if($(window).width() <= 730){
+    if($(window).width() <= 736){
       document.getElementById('code_computer').style.width = "70%";
       console.log("hello");
     }else{
       document.getElementById('code_computer').style.width = "700px";
     }
+  });
+
+  $("#left-tab").hover(function(){
+    $("#left-tab-div").css("visibility", "visible");
+    }, function(){
+    $("#left-tab-div").css("visibility", "hidden");
   });
 
   $("#right-tab").hover(function(){

@@ -21,12 +21,13 @@ $(document).ready(function(){
 
     if($(window).height() <= 414){
       document.getElementById('cartoon_computer').style.width = "40%";
+      document.getElementById('cartoon_computer').style.top = "-30px";
     }else{
       console.log("taller than 414px");
     }
 
     resizeFamImageWidth();
-    resiseFamImageHeight();
+    resizeFamImageHeight();
   });
 
   var resizeFamImageWidth = function(){
@@ -43,6 +44,7 @@ $(document).ready(function(){
     $(window).resize(function(){
       if($(window).height() <= 414){
         document.getElementById('cartoon_computer').style.width = "40%";
+        document.getElementById('cartoon_computer').style.top = "-30px";
       }else
       console.log("height taller than 414px");{
       }
@@ -69,7 +71,15 @@ $(document).ready(function(){
       document.getElementById('code_computer').style.width = "500px";
     }
 
+    if($(window).height() <= 414){
+      document.getElementById('code_computer').style.width = "40%";
+      document.getElementById('code_computer').style.top = "-30px";
+    }else{
+      console.log("taller than 414px");
+    }
+
     resizeCodeImageAfterClick();
+    resizeCodeImageHeight();
   });
 
   var resizeCodeImageAfterClick = function(){
@@ -78,6 +88,17 @@ $(document).ready(function(){
         document.getElementById('code_computer').style.width = "70%";
       }else if($(window).width() >= 736){
         document.getElementById('code_computer').style.width = "700px";
+      }
+    });
+  };
+
+  var resizeCodeImageHeight = function(){
+    $(window).resize(function(){
+      if($(window).height() <= 414){
+        document.getElementById('code_computer').style.width = "40%";
+        document.getElementById('code_computer').style.top = "-30px";
+      }else
+      console.log("height taller than 414px");{
       }
     });
   };
@@ -106,6 +127,13 @@ $(document).ready(function(){
     }else{
       document.getElementById('cartoon_computer').style.width = "700px";
     }
+
+    if($(window).height() <= 414){
+      document.getElementById('cartoon_computer').style.width = "40%";
+      document.getElementById('cartoon_computer').style.top = "-30px";
+    }else{
+      console.log("taller than 414px");
+    }
   });
 
   document.getElementById('right-tab').addEventListener('click', function(){
@@ -131,6 +159,13 @@ $(document).ready(function(){
       document.getElementById('code_computer').style.width = "70%";
     }else{
       document.getElementById('code_computer').style.width = "700px";
+    }
+
+    if($(window).height() <= 414){
+      document.getElementById('code_computer').style.width = "40%";
+      document.getElementById('code_computer').style.top = "-30px";
+    }else{
+      console.log("taller than 414px");
     }
   });
 

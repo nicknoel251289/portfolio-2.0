@@ -52,6 +52,23 @@ img {
   grid-row: 2/3;
 }
 
+@media (max-height: 414px){
+
+  #cartoon_computer {
+    position: relative;
+    width: 90%;
+    margin-left: 55%;
+    grid-row: 2/3;
+  }
+  #code_computer {
+    position: relative;
+    width: 90%;
+    margin-left: -45%;
+    grid-row: 2/3;
+  }
+
+}
+
 
 .logo_container {
   display: flex;

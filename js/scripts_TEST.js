@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-  var innerScreenWidth = window.innerWidth;
-  console.log(innerScreenWidth);
-
   document.getElementById('view_button').addEventListener('click', function(){
     document.getElementById('left_block').style.width = "100%";
     document.getElementById('right_block').style.width = "0%";
@@ -18,21 +15,36 @@ $(document).ready(function(){
 
     if($(window).width() <= 736){
       document.getElementById('cartoon_computer').style.width = "70%";
-      console.log("hello");
     }else{
       document.getElementById('cartoon_computer').style.width = "500px";
     }
 
-    resizeFamImageAfterClick();
+    if($(window).height() <= 414){
+      document.getElementById('cartoon_computer').style.width = "40%";
+    }else{
+      console.log("taller than 414px");
+    }
+
+    resizeFamImageWidth();
+    resiseFamImageHeight();
   });
 
-  var resizeFamImageAfterClick = function(){
+  var resizeFamImageWidth = function(){
     $(window).resize(function(){
       if($(window).width() <= 736){
-        console.log("hello");
         document.getElementById('cartoon_computer').style.width = "70%";
       }else if($(window).width() >= 736){
         document.getElementById('cartoon_computer').style.width = "700px";
+      }
+    });
+  };
+
+  var resizeFamImageHeight = function(){
+    $(window).resize(function(){
+      if($(window).height() <= 414){
+        document.getElementById('cartoon_computer').style.width = "40%";
+      }else
+      console.log("height taller than 414px");{
       }
     });
   };
@@ -53,7 +65,6 @@ $(document).ready(function(){
 
     if($(window).width() <= 736){
       document.getElementById('code_computer').style.width = "70%";
-      console.log("hello");
     }else{
       document.getElementById('code_computer').style.width = "500px";
     }
@@ -64,7 +75,6 @@ $(document).ready(function(){
   var resizeCodeImageAfterClick = function(){
     $(window).resize(function(){
       if($(window).width() <= 736){
-        console.log("hello");
         document.getElementById('code_computer').style.width = "70%";
       }else if($(window).width() >= 736){
         document.getElementById('code_computer').style.width = "700px";
@@ -93,7 +103,6 @@ $(document).ready(function(){
 
     if($(window).width() <= 736){
       document.getElementById('cartoon_computer').style.width = "70%";
-      console.log("hello");
     }else{
       document.getElementById('cartoon_computer').style.width = "700px";
     }
@@ -120,7 +129,6 @@ $(document).ready(function(){
 
     if($(window).width() <= 736){
       document.getElementById('code_computer').style.width = "70%";
-      console.log("hello");
     }else{
       document.getElementById('code_computer').style.width = "700px";
     }

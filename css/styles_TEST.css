@@ -145,14 +145,14 @@ img {
   color: white;
 }
 #left-tab-div {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
+  writing-mode: vertical-rl;
   visibility: visible;
+  text-orientation: upright;
 }
 #right-tab-div {
   writing-mode: vertical-lr;
-  text-orientation: upright;
   visibility: visible;
+  text-orientation: upright;
 }
 
 .button_container {

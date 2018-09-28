@@ -5,7 +5,7 @@ $(document).ready(function(){
     document.getElementById('right_block').style.width = "0%";
     document.getElementById('cartoon_computer').style.margin = "0 auto";
     document.getElementById('right-tab').style.visibility = "visible";
-    document.getElementById('right-tab-div').style.visibility = "visible";
+    document.getElementById('right-tab-div').style.display = "content";
     document.getElementById('view_button').style.display = "none";
     document.getElementById('work_button').style.display = "none";
     document.getElementById('artwork_auto_scroll').style.display = "block";
@@ -180,17 +180,6 @@ $(document).ready(function(){
 
   });
 
-  $("#left-tab").hover(function(){
-    $("#left-tab-div").css("visibility", "visible");
-    }, function(){
-    $("#left-tab-div").css("visibility", "hidden");
-  });
-
-  $("#right-tab").hover(function(){
-    $("#right-tab-div").css("visibility", "visible");
-    }, function(){
-    $("#right-tab-div").css("visibility", "hidden");
-  });
 
   $("#artwork_auto_scroll").on('click', function(event) {
     // Makes sure this.hash has a value before overriding default behavior
@@ -239,6 +228,19 @@ $(document).ready(function(){
       });
     }
   });
+
+
+  var progressBarStatus = function(){
+
+    var screenHeight = $(document).innerHeight();
+    var currentPositionIs = $(document).scrollTop();
+    var myPercentageIs = (currentPositionIs + screenHeight) / screenHeight;
+    console.log(myPercentageIs);
+
+    requestAnimationFrame(progressBarStatus);
+  };
+
+  progressBarStatus();
 
   /* var charcoal_list = document.getElementsByClassName("charcoal");
   document.getElementById("charcoal_filter").addEventListener("click", function(){

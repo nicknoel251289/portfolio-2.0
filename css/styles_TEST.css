@@ -526,6 +526,22 @@ li.show {
 }
 
 @media (min-width: 850px) {
+
+  #cartoon_computer {
+    position: relative;
+    width: 80%;
+    margin-left: 60%;
+    align-self: center;
+    top: -30px;
+  }
+  #code_computer {
+    position: relative;
+    max-width: 80%;
+    margin-left: -40%;
+    align-self: center;
+    top: -30px;
+  }
+  
   .art {
     column-count: 3;
   }

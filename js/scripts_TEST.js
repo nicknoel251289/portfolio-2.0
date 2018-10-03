@@ -185,49 +185,48 @@ $(document).ready(function(){
 
   });
 
-
   document.getElementById('project-1').addEventListener('mouseover', function(){
-    document.getElementById('project-1-bg-image').style.opacity = "1";
     document.getElementById('purple-1').style.opacity = "0";
-    document.getElementById('project-1-info-container').style.marginLeft = "-130px";
+    document.getElementById('project-1-info-container').style.marginBottom = "-130px";
+    document.getElementById('project-1-bg-image').style.transform = "scale(1.05)"
   });
   document.getElementById('project-1').addEventListener('mouseleave', function(){
-    document.getElementById('project-1-bg-image').style.opacity = ".4";
     document.getElementById('purple-1').style.opacity = "1";
-    document.getElementById('project-1-info-container').style.marginLeft = "0px";
+    document.getElementById('project-1-info-container').style.marginBottom = "0px";
+    document.getElementById('project-1-bg-image').style.transform = "scale(1)"
   });
 
   document.getElementById('project-2').addEventListener('mouseover', function(){
-  document.getElementById('project-2-bg-image').style.opacity = "1";
   document.getElementById('purple-2').style.opacity = "0";
-  document.getElementById('project-2-info-container').style.marginLeft = "-130px";
+  document.getElementById('project-2-info-container').style.marginBottom = "-130px";
+  document.getElementById('project-2-bg-image').style.transform = "scale(1.05)"
   });
   document.getElementById('project-2').addEventListener('mouseleave', function(){
-    document.getElementById('project-2-bg-image').style.opacity = ".4";
     document.getElementById('purple-2').style.opacity = "1";
-    document.getElementById('project-2-info-container').style.marginLeft = "0px";
+    document.getElementById('project-2-info-container').style.marginBottom = "0px";
+    document.getElementById('project-2-bg-image').style.transform = "scale(1)"
   });
 
   document.getElementById('project-3').addEventListener('mouseover', function(){
-    document.getElementById('project-3-bg-image').style.opacity = "1";
     document.getElementById('purple-3').style.opacity = "0";
-    document.getElementById('project-3-info-container').style.marginLeft = "-130px";
+    document.getElementById('project-3-info-container').style.marginBottom = "-130px";
+    document.getElementById('project-3-bg-image').style.transform = "scale(1.05)"
   });
   document.getElementById('project-3').addEventListener('mouseleave', function(){
-    document.getElementById('project-3-bg-image').style.opacity = ".4";
     document.getElementById('purple-3').style.opacity = "1";
-    document.getElementById('project-3-info-container').style.marginLeft = "0px";
+    document.getElementById('project-3-info-container').style.marginBottom = "0px";
+    document.getElementById('project-3-bg-image').style.transform = "scale(1)"
   });
 
   document.getElementById('project-4').addEventListener('mouseover', function(){
-    document.getElementById('project-4-bg-image').style.opacity = "1";
     document.getElementById('purple-4').style.opacity = "0";
-    document.getElementById('project-4-info-container').style.marginLeft = "-130px";
+    document.getElementById('project-4-info-container').style.marginBottom = "-130px";
+    document.getElementById('project-4-bg-image').style.transform = "scale(1.05)"
   });
   document.getElementById('project-4').addEventListener('mouseleave', function(){
-    document.getElementById('project-4-bg-image').style.opacity = ".4";
     document.getElementById('purple-4').style.opacity = "1";
-    document.getElementById('project-4-info-container').style.marginLeft = "0px";
+    document.getElementById('project-4-info-container').style.marginBottom = "0px";
+    document.getElementById('project-4-bg-image').style.transform = "scale(1)"
   });
 
 

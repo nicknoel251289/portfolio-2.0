@@ -178,12 +178,40 @@ $(document).ready(function(){
       document.getElementById('code_computer').style.width = "40%";
       document.getElementById('code_computer').style.top = "-30px";
     }else{
-      console.log("taller than 414px");
     }
 
     resizeCodeImageAfterClick();
     resizeCodeImageHeight();
 
+  });
+
+
+  document.getElementById('project-1').addEventListener('mouseover', function(){
+    document.getElementById('project-1-bg-image').style.opacity = ".8";
+  });
+  document.getElementById('project-1').addEventListener('mouseleave', function(){
+    document.getElementById('project-1-bg-image').style.opacity = ".5";
+  });
+
+  document.getElementById('project-2').addEventListener('mouseover', function(){
+    document.getElementById('project-2-bg-image').style.opacity = ".8";
+  });
+  document.getElementById('project-2').addEventListener('mouseleave', function(){
+    document.getElementById('project-2-bg-image').style.opacity = ".5";
+  });
+
+  document.getElementById('project-3').addEventListener('mouseover', function(){
+    document.getElementById('project-3-bg-image').style.opacity = ".8";
+  });
+  document.getElementById('project-3').addEventListener('mouseleave', function(){
+    document.getElementById('project-3-bg-image').style.opacity = ".5";
+  });
+
+  document.getElementById('project-4').addEventListener('mouseover', function(){
+    document.getElementById('project-4-bg-image').style.opacity = ".8";
+  });
+  document.getElementById('project-4').addEventListener('mouseleave', function(){
+    document.getElementById('project-4-bg-image').style.opacity = ".5";
   });
 
 
@@ -280,17 +308,6 @@ $(document).ready(function(){
     first();
 
   }); */
-
-    document.getElementById("add_to_list").onclick = function(){
-      var list = document.getElementById("list");
-      var create_list_item = document.createElement("li");
-      var new_list_item = create_list_item;
-      new_list_item.innerHTML = "List Item";
-      list.appendChild(new_list_item);
-      setTimeout(function(){
-        new_list_item.className = new_list_item.className + " show";
-      }, 100);
-    }
 
     /*$('#charcoal_filter').click(function(e) {
       if(document.getElementById("charcoal_filter").checked == true){

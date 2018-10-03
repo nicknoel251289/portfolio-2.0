@@ -288,7 +288,7 @@ img {
   margin: auto;
   height: 680px;
   vertical-align: middle;
-  background: #333338;
+  background: #1b1b1d;
   margin: auto;
   grid-column: 1/2;
   grid-row: 2/4;
@@ -355,7 +355,7 @@ img {
   display: none;
   box-sizing: border-box;
   padding-bottom: 2em;
-  background: #dddddd;
+  background: #1b1b1d;
   max-width: 100vw;
   min-width: 100px;
   margin: auto;
@@ -424,7 +424,7 @@ img {
   position: absolute;
   width: 100%;
   bottom: 0;
-  color: white;
+  color: #4d10c7;
   transition: .5s;
 }
 #project-1-bg-image {

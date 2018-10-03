@@ -364,47 +364,44 @@ img {
   overflow: hidden;
 }
 .projects h1 {
-  font-size: 1.5em;
-  padding: 0 0 20px 40px;
-  margin: 0;
+  font-size: 2em;
+  display: grid;
+  place-items: center;
+  transition: .5s;
 }
 .project-image-container {
   background: 50% 50% / cover;
   overflow: hidden;
   width: 100%;
   height: 100%;
+  opacity: .4;
 }
 .project-image-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .project-info-container {
-  box-sizing: border-box;
-  padding: 15px;
   position: absolute;
-  bottom: 0;
+  bottom: 35%;
   width: 100%;
   color: white;
+  transition: .5s;
 }
 #project-1-bg-image {
   grid-row: 1/2;
   background-image: url("../pictures/Fitform_Home.png");
-  opacity: .5;
-  transition: .25s;
+  transition: .55s;
 }
 #project-2-bg-image {
   background-image: url("../pictures/sperling-project.jpg");
-  opacity: .5;
-  transition: .25s;
+  transition: .55s;
 }
 #project-3-bg-image {
   background-image: url("../pictures/pbnation-home.png");
-  opacity: .5;
-  transition: .25s;
+  transition: .55s;
 }
 #project-4-bg-image {
   background-image: url("../pictures/Fitform_Home.png");
-  opacity: .5;
-  transition: .25s;
+  transition: .55s;
 }
 
 #section_4 {

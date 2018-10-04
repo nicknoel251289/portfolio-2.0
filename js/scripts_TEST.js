@@ -82,8 +82,6 @@ $(document).ready(function(){
     if($(window).height() <= 375){
       document.getElementById('code_computer').style.width = "40%";
       document.getElementById('code_computer').style.top = "-30px";
-    }else{
-      console.log("taller than 414px");
     }
 
     resizeCodeImageAfterClick();
@@ -185,6 +183,20 @@ $(document).ready(function(){
 
   });
 
+  //var projects = document.querySelectorAll('projects');
+  /*var projects = document.getElementsByClassName('projects');
+  var projectArray = Array.from(projects);
+  console.log(projectArray);
+
+  var caseStudyHover = function(project){
+    this.project = project;
+    this.addEventListener('mouseover', function(){
+      this.project.style.opacity = "0";
+      this.project.style.marginBottom = "-130px";
+      this.project.style.transform = "scale(1.05)"
+    })
+  }
+
   document.getElementById('project-1').addEventListener('mouseover', function(){
     document.getElementById('purple-1').style.opacity = "0";
     document.getElementById('project-1-info-container').style.marginBottom = "-130px";
@@ -197,9 +209,9 @@ $(document).ready(function(){
   });
 
   document.getElementById('project-2').addEventListener('mouseover', function(){
-  document.getElementById('purple-2').style.opacity = "0";
-  document.getElementById('project-2-info-container').style.marginBottom = "-130px";
-  document.getElementById('project-2-bg-image').style.transform = "scale(1.05)"
+    document.getElementById('purple-2').style.opacity = "0";
+    document.getElementById('project-2-info-container').style.marginBottom = "-130px";
+    document.getElementById('project-2-bg-image').style.transform = "scale(1.05)"
   });
   document.getElementById('project-2').addEventListener('mouseleave', function(){
     document.getElementById('purple-2').style.opacity = "1";
@@ -227,7 +239,7 @@ $(document).ready(function(){
     document.getElementById('purple-4').style.opacity = "1";
     document.getElementById('project-4-info-container').style.marginBottom = "0px";
     document.getElementById('project-4-bg-image').style.transform = "scale(1)"
-  });
+  });*/
 
 
   $("#artwork_auto_scroll").on('click', function(event) {

@@ -74,14 +74,24 @@ $(document).ready(function(){
     document.getElementById('section_5').style.display = "block";
     document.getElementById('left-tab').style.display = "inline-flex";
 
+  
     if($(window).width() <= 813){
       document.getElementById('code_computer').style.width = "70%";
+      if($(window).width() <= 813 && $(window).height() <= 375){
+        document.getElementById('code_computer').style.width = "40%";
+        document.getElementById('code_computer').style.top = "-30px";
+      }
+    }else if($(window).width() <= 370){
+      document.getElementById('code_computer').style.width = "140%";
     }else{
       document.getElementById('code_computer').style.width = "700px";
     }
+
     if($(window).height() <= 375){
       document.getElementById('code_computer').style.width = "40%";
       document.getElementById('code_computer').style.top = "-30px";
+    }else{
+
     }
 
     resizeCodeImageAfterClick();

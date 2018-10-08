@@ -29,6 +29,7 @@ p {
 }
 ul {
   line-height: 1.6em;
+  padding-left: 1.5em;
 }
 
 #top-nav {
@@ -167,79 +168,101 @@ ul {
 /**** SECTION 6 ****/
 .iteration-testing-container {
   padding: 0 2em;
-  max-width: 450px;
   margin: 0 auto;
+  max-width: 450px;
 }
 .iteration-testing-container h2 {
   text-align: center;
 }
-.wireframe-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: .5em;
+
+.iteration-images-info-container {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+  justify-content: center;
 }
-.wireframe-container span {
-  text-align: center;
-  font-weight: 600;
-}
-.wireframe-container img {
-  width: 100%;
+.iteration-card {
+  max-width: 400px;
+  padding-bottom: .5em;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.iteration-1-container {
+  overflow: hidden;
+  background: white;
+  border-radius: 4px;
+}
+.iteration-image-container {
+  overflow: hidden;
+}
+.iteration-image-container img {
+  width: 100%;
+}
+.iteration-info-container h4 {
+  padding: 0;
+  margin: 0;
+}
+.iteration-info-container {
+  padding: 0 1em;
 }
 
 /**** SECTION 7 ****/
-.questionnair-ab-testing-container {
+.comparative-research-container {
   padding: 0 2em;
   max-width: 450px;
   margin: 0 auto;
 }
-.questionnair-ab-testing-container h2 {
+.comparative-research-container h2 {
   text-align: center;
-}
-.wireframe-iteration-2-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: .5em;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1em;
-}
-.wireframe-iteration-2-container span {
-  text-align: center;
-  font-weight: 600;
-}
-.wireframe-iteration-2-container img {
-  width: 100%;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 /**** SECTION 8 ****/
-.design-container {
+.preference-testing-container {
   padding: 0 2em;
   max-width: 450px;
   margin: 0 auto;
 }
-.design-container h2 {
+.preference-testing-container h2 {
   text-align: center;
 }
-.style-guide-container {
-  overflow: hidden;
+
+.preference-testing-images-container {
+  max-width: 800px;
+  padding: 0 1em;
+  display: grid;
+  justify-content: center;
+  grid-gap: 1em;
+}
+.preference-testing-images-container h3 {
+  text-align: center;
+}
+
+/**** SECTION 9 ****/
+.logo-rebrand-container {
+  padding: 0 2em;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.logo-rebrand-container h2 {
+  text-align: center;
+}
+.logo-container {
+  padding: 0 2em;
   max-width: 800px;
   margin: 0 auto;
-  padding: 1em;
 }
-.style-guide-container img {
+.logo-image-container {
+  overflow: hidden;
+}
+.logo-image-container img {
   width: 100%;
+  border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-/**** SECTION 9 ****/
+/**** SECTION 10 ****/
 .results-container {
   padding: 0 2em;
   max-width: 450px;
@@ -248,27 +271,27 @@ ul {
 .results-container h2 {
   text-align: center;
 }
-.results-grid {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 1fr .8fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  overflow: hidden;
+.results-images-container {
+  padding: 0 2em;
   max-width: 800px;
   margin: 0 auto;
-  padding: 1em;
 }
-.results-grid img {
+.results-images-container h5 {
+  margin: 0;
+  padding: 0 0 1.5em 0;
+  text-align: center;
+}
+.results-image-container {
+  overflow: hidden;
+}
+.results-image-container img {
   width: 100%;
+  border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-.results-grid .ff-redesign {
-  grid-column: 1/2;
-  grid-row: 1/4;
-}
 
-/**** SECTION 10 ****/
+/**** SECTION 11 ****/
 .learned-container {
   padding: 0 2em;
   max-width: 450px;
@@ -319,7 +342,8 @@ ul {
   .persona-card {
     margin: 0 auto;
   }
-  .wireframe-container {
+  .results-images-container, .logo-container, .preference-testing-images-container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -327,7 +351,7 @@ ul {
 @media (min-width: 812px) {
 
   .intro-container, .title-container, .about-container, .role-objective-container, .research-container,
-  .personas-container, .iteration-testing-container, .questionnair-ab-testing-container, .design-container,
+  .personas-container, .iteration-testing-container, .comparative-research-container, .preference-testing-container,
   .results-container, .learned-container {
     max-width: 650px;
   }

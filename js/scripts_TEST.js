@@ -74,7 +74,7 @@ $(document).ready(function(){
     document.getElementById('section_5').style.display = "block";
     document.getElementById('left-tab').style.display = "inline-flex";
 
-  
+
     if($(window).width() <= 813){
       document.getElementById('code_computer').style.width = "70%";
       if($(window).width() <= 813 && $(window).height() <= 375){
@@ -159,6 +159,7 @@ $(document).ready(function(){
   });
 
   document.getElementById('right-tab').addEventListener('click', function(){
+
     document.getElementById('right-tab').style.display = "none";
     document.getElementById('left-tab').style.visibility = "visible";
     document.getElementById('left-tab-div').style.visibility = "visible";
